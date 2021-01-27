@@ -2,31 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Icon Material Design Ref-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Vue Js - HelloWorld App</title>
 
-    <!-- Icon iconmonstr Design Ref-->
-    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
+    <!-- https://tailwindcss.com/docs/installation -->
     <!-- Using Tailwind via CDN -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<h1>สวัสดีครับ55555555555555555</h1>
-<!-- Icon use materia-->
-<i class="material-icons"> savings </i>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 
-<!-- Icon use iconmonstr-->
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path
-        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-</svg>
-<i class="im im-spotify"></i>
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
 
 <body>
+    <div id="app" class="h-screen w-full bg-gray-200 flex items-start justify-start">
+        <img src="image/1.png" class="w-1/3 h-full">
+        <div class="w-full flex items-center justify-end">
+            <i class="material-icons">face</i>
+            <p class="font-semibold text-xl tracking-wider uppercase px-3">{{msg}}</p>
+        </div>
+    </div>
 
+    <!-- my main.js -->
+    <script src="main.js"></script>
 </body>
 
 </html>
